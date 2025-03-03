@@ -253,8 +253,7 @@ const login = async (req, res) => {
     res.status(403).end();
   }
   res.cookie("Authorization", `Bearer ${token}`, {
-    domain: "example.com",
-    path: "/",
+    domain: "example.com", //NOTE: changer en fonction de votre domaine
     secure: true,
     httpOnly: true,
     sameSite: "strict",

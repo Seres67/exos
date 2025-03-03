@@ -266,7 +266,7 @@ Pour ça, il faut créer les routers qui sont chaînés avec l'option `mergePara
 ```js
 import express from "express";
 
-const router = express.Router();
+const router = express.Router({ mergeParams: true });
 
 router.get("/", (req, res) => {
   const posts = [];
